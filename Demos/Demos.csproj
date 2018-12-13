@@ -33,6 +33,8 @@
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,8 +44,10 @@
   <ItemGroup>
     <Compile Include="CompilerInferredGenericMethodTypes.cs" />
     <Compile Include="CompatibilityAndEqualityOfDelegates.cs" />
+    <Compile Include="CompressingInMemoryStreams.cs" />
     <Compile Include="ConstrainingGenerics.cs" />
     <Compile Include="CustomAggregate.cs" />
+    <Compile Include="DebuggerProxy.cs" />
     <Compile Include="DelayingStartOfATask.cs" />
     <Compile Include="DemoSupportCode\ByStringLengthComparer.cs" />
     <Compile Include="DemoSupportCode\ClassWithStaticCtorException.cs" />
@@ -56,12 +60,14 @@
     <Compile Include="DemoSupportCode\ISomeInterface.cs" />
     <Compile Include="DemoSupportCode\NoRefNoOverride.cs" />
     <Compile Include="DemoSupportCode\NoRefWithOverride.cs" />
+    <Compile Include="DemoSupportCode\Person.cs" />
     <Compile Include="DemoSupportCode\SomeClass.cs" />
     <Compile Include="DemoSupportCode\WithRefNoOverride.cs" />
     <Compile Include="DemoSupportCode\WithRefWithOverride.cs" />
     <Compile Include="ExplicitInterfaceImplementation.cs" />
     <Compile Include="IntegerNumberSequenceGeneration.cs" />
     <Compile Include="MergingIEnumberableSequences.cs" />
+    <Compile Include="OverwritingHiddenFiles.cs" />
     <Compile Include="SetOperations.cs" />
     <Compile Include="ShortCircuitingConditionalOperators.cs" />
     <Compile Include="SortedCollections.cs" />
@@ -71,6 +77,8 @@
     <Compile Include="MulticastDelegates.cs" />
     <Compile Include="LinqQueryAndFluentSyntax.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkingWithUris.cs" />
+    <Compile Include="WorkingWithZipFiles.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
